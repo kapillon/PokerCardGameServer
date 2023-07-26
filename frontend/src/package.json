@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^5.0.2"
+  },
+  "scripts": {
+    "start": "cd ../../  &&  node backend/src/server.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "postbuild": "cd ../../ && cd backend/src && npm install"  ,
+    "prebuild": "npm install",
+    "dev": "cross-env NODE_ENV=development webpack --watch"
+  },
+  "dependencies": {
+    "depcheck": "^1.4.3",
+    "socket.io-client": "^4.6.1"
+  }
+}

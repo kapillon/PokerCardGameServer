@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FAFAFA;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #262626;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+  
+  }
+
+
+  #register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    max-width: 400px;
+}
+
+#register-form label {
+  align-self: flex-start;
+}
+
+
+#register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #0095f6;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    max-width: 400px;
+}
+
+
+#login-form label {
+  align-self: flex-start;
+}
+
+#login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+#login-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+  
+  .container {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .score-board {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  #notifications {
+    margin-bottom: 20px;
+  }
+  
+  #chat {
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #FFF;
+    padding: 10px 20px;
+  }
+
+  #message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #message-form input{
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    height: 30px; 
+    overflow-y: auto; 
+    z-index:9999;
+  }
+  
+  #message-form button {
+    background-color: #0095F6;
+    border: none;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  
+  .score-board {
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.score-board p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #262626;
+}
+
+.score-board h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #262626;
+}
+
+
+
+
+#bet-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 8px 15px; /* Adjust padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 14px; /* Adjust font size */
+    margin: 4px 2px;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 4px; /* Adjust border radius */
+    transition-duration: 0.4s; /* Add animation */
+}
+
+#bet-button:hover {
+    background-color: #364da8; /* Green background on hover */
+}
+
+#bet-input {
+    width: 50px; /* Adjust width */
+    border: none; /* No border */
+    padding: 4px; /* Adjust padding */
+    margin: 4px 2px;
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Adjust font size */
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100px;   /* increased width */
+  height: 150px;  /* increased height */
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;  /* added right margin */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f1eeee;
+  width: 100%;
+  height: 100%;
+}
+
+.card-value {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.card-suit {
+  font-size: 20px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.card .card-value, .card .card-suit {
+  color: black;
+}
+
+.card[data-suit="♥"], .card[data-suit="♦"] {
+  color: red;
+}
+
+
+
+#bet-button {
+  background-color: #4C87af; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  padding: 8px 15px; /* Adjust padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* No underline */
+  display: inline-block;
+  font-size: 14px; /* Adjust font size */
+  margin: 4px 2px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 4px; /* Adjust border radius */
+  transition-duration: 0.4s; /* Add animation */
+}
+
+#fold-button{
+  background-color: #4c87af; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  padding: 8px 15px; /* Adjust padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* No underline */
+  display: inline-block;
+  font-size: 14px; /* Adjust font size */
+  margin: 4px 2px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 4px; /* Adjust border radius */
+  transition-duration: 0.4s; /* Add animation */
+
+}
+
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: fit-content;
+    color:#0095F6;
+    max-width: 70%;
+}
+
+.incoming {
+    background-color: #f0f0f0; /* Light grey background for incoming messages */
+    color: black;
+    margin-left: 10px;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background-color: #4CAF50; /* Green background for outgoing messages */
+    color: white;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+
+#user-list {
+  list-style-type: none;  /* removes bullet points */
+  padding: 0;  /* removes default padding */
+  margin: 0;  /* removes default margin */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#user-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;  /* creates a line between each user */
+}
+
+#user-list li:last-child {
+  border-bottom: none;  /* removes the line after the last user */
+}
+
+#user-list li:hover {
+  background-color: #f5f5f5;  /* changes the background color when hovering over a user */
+}
+
+
+#waiting-message {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 120px; /* To give space for the loader */
+  display: none;
+}
+
+#waiting-message::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px; /* Half the height */
+  margin-left: -40px; /* Half the width */
+  border-radius: 50%;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#game {
+  background: radial-gradient(circle at center, #006400, #008000, #006400);
+  /* Add additional styling properties as needed */
+}
+
+
+.form-container {
+  max-width: 400px; /* Set form container width */
+  margin: 0 auto; /* Center the form on the page */
+  padding: 20px;
+  background-color: #FFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+}
+
+

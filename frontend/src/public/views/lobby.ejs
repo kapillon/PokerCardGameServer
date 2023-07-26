@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobby</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div id="content" class="container">
+    <!-- Navbar -->
+    <%- include('partials/navbar', { user: user }) %>
+
+    <!-- Game Score -->
+    <div class="score-board">
+      <h1>Welcome to the Game Lobby</h1>
+      <p>Hi <%= user.username %>, this is the game lobby!</p>
+      <h2>Users connected </h2>
+      <ul id="user-list"></ul>
+    </div>
+    <!-- Waiting Message -->
+    <h2 id="waiting-message" style="display: none;">Waiting for a second player...</h2>
+
+    <!-- Game -->
+    <div id="game">
+      <div class="user-card"></div>
+      <div class="buttons"></div>
+    </div>
+        <!-- Game Notification -->
+    <div id="notifications"></div>
+
+    <!-- Chat -->
+    <div id="chat">
+      <div id="messages"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <form id="message-form">
+        <input id="message-input" type="text" placeholder="Type a message" />
+        <button type="submit">Send</button>
+      </form>
+    </footer>
+
+    <div id="message" class="message"></div>
+  </div>
+  
+  <script defer src="/frontend/src/public/dist/bundle.js"></script>
+</body>
+</html>
