@@ -1,14 +1,8 @@
 
 
-STUDENT: MOHAMED SHARIF
-STUDENT ID: 920703534
-PROJECT: CSC667 TERM PROJECT
+This project I initially started during my senior elective and worked alone. The application is under development. The web application is to be a poker game that it allows multiple people to join and play simultaneously in the same game. Users also can chat in an open chat. The application is working yet contain bugs and is under development. 
 
-
-Texas Hold Poker Game Term Project
-
-
-The project is live on 
+to either try the demonstration or run locally follow the instructions
 
 Note: I have the free edition of render. It will take about 2-4 minutes to render and start application after clicking the link
 
